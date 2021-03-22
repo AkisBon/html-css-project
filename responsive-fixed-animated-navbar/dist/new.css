@@ -1,0 +1,73 @@
+#logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background:url("http://www.fnordware.com/superpng/pnggrad8rgb.png") no-repeat;
+    width:8%;
+    height:72%;
+    background-size: 100%;
+}
+#nav{
+    height: 40%;
+    background-color: #fbfbfb;
+    list-style-type: none;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    left: 0%;
+    border-bottom: 1px solid;
+    border-color: #02ddfe;
+    font-size : 100%;
+}
+#menu{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    position: fixed;
+    left: 2%;
+    font-size: 100%;
+    top: -2%;
+}
+#menu ul{
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#menu ul ul{
+    display: none;
+}
+#menu ul a{
+    color: #bbbbbb;
+    text-decoration: none;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    transition: color 0.4s;
+}
+#menu ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+#menu ul li a,visited{
+    color: #bbbbbb;
+    display: block;
+    padding: 0px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: #4ebbe8;
+    text-decoration: none;
+}    
+#menu ul li:hover ul{
+    display: block;
+}
+#menu ul ul{
+    background-color: #ffffff;
+    position: absolute;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}

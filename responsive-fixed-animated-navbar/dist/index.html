@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Fixed Animated NavBar</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <nav class="nav" id="nav_bar">
+        <div class="container">
+            <!-- <div class="logo"> -->
+                <!-- </div> -->
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li class="nav_logo">
+                        <a href="./index.html"> 
+                            <img class="img-responsive" src="../obj/logo.png" alt=""> 
+                        </a>
+                    </li>
+                    <li><a href="#">Δρομολόγια</a></li>
+                    <li><a href="#">Εισιτήρια</a></li>
+                    <li><a href="#">Ανακοινώσεις</a></li>
+                    <li><a href="#">Προσβασιμότητα</a></li>
+                    <li><a href="#">Επικοινωνία</a></li>
+                    <li>
+                        <button class="dropbtn" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"></button>
+                        <div class="dropdown">
+                            <!-- <button class="dropbtn"></button> -->
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div> 
+                    </li>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </ul>
+            </div>
+
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- <nav class="sml_nav">
+        <div class="container">
+            <div class="sml_logo">
+                <a class="sml_navbar-logo" href="./index.html">
+                    <img class="sml_img-responsive" src="../obj/logo_small.png" alt="">
+                </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Δρομολόγια</a></li>
+                    <li><a href="#">Εισιτήρια</a></li>
+                    <li><a href="#">Ανακοινώσεις</a></li>
+                    <li><a href="#">Προσβασιμότητα</a></li>
+                    <li><a href="#">Επικοινωνία</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav> -->
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">What is this ?</h2>
+        <p class="myP">This is a responsive fixed navbar animated on scroll</p>
+        <p class="myP">I took inspiration from ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>) and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
+        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+        <p class="myP">Albi</p>
+        <p class="myP">
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis
+            placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem
+            aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam,
+            dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo
+            itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi
+            harum eos voluptatibus animi labore officiis minus laboriosam
+        </p>
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        // $(function() { 
+        //     var logo = $(".lrg_nav"); 
+            
+        //     $(window).scroll(function() {
+        //         var scroll = $(document).scrollTop();
+
+        //             if (scroll >= 40) {
+        //                 console.log("OK1");
+        //                 if(!logo.hasClass(".lrg_nav div.lrg_logo")) {
+        //                     console.log("OK2");
+        //                     logo.hide();
+        //                     logo.removeClass(".lrg_nav").addClass(".sml_nav").addClass("affix");
+        //                 }
+
+        //             } else {
+        //             // if(!logo.hasClass("lrg-logo")) {
+        //                 logo.hide();
+        //                 logo.removeClass(".sml_nav").removeClass("affix").addClass(".lrg_nav");
+        //             // }
+        //         }
+        //     });
+        // });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 40) {
+                $('.nav').addClass('overwrite_nav');
+                // $('.nav div.logo .navbar-logo').addClass('overwrite_navbar-logo');
+                $('.nav div.main_list').addClass('overwrite_main_list');
+                $('.nav div.main_list ul li.nav_logo').addClass('overwrite_navbar-logo');
+                $('.nav div.main_list ul li.nav_logo .img-responsive').addClass('overwrite_img-responsive');
+                $('.nav div.main_list ul li.nav_logo .img-responsive').attr('src',"../obj/logo_small.png");
+                $('.nav div.main_list ul').addClass('overwrite_main_list_ul');
+                $('.nav div.main_list ul a').addClass('overwrite_main_list_ul_a');
+                $('.nav div.main_list ul li').addClass('overwrite_main_list_ul_li');
+                $('.nav div.main_list ul li a').addClass('overwrite_main_list_entries');
+                $('.nav div.main_list ul li button').addClass('overwrite_main_list_ul_li_button');
+                console.log("Navigation Bar Overwrite");
+                
+            } else {
+                $('.nav').removeClass('overwrite_nav');
+                // $('.nav div.logo .navbar-logo').removeClass('overwrite_navbar-logo');
+                
+                $('.nav div.main_list').removeClass('overwrite_main_list');
+                // $('.nav div.main_list a.navbar-logo').removeClass('overwrite_navbar-logo');
+                $('.nav div.main_list ul li.nav_logo').addClass('overwrite_navbar-logo');
+                $('.nav div.main_list ul li.nav_logo .img-responsive').removeClass('overwrite_img-responsive');
+                $('.nav div.main_list ul li.nav_logo .img-responsive').attr('src',"../obj/logo.png");
+                $('.nav div.main_list ul').removeClass('overwrite_main_list_ul');
+                $('.nav div.main_list ul a').removeClass('overwrite_main_list_ul_a');
+                $('.nav div.main_list ul li').removeClass('.overwrite_main_list_ul_li');
+                $('.nav div.main_list ul li a').removeClass('overwrite_main_list_entries');
+                $('.nav div.main_list ul li button').removeClass('overwrite_main_list_ul_li_button');
+            }
+        });
+    </script>
+    <!-- partial -->
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav_bar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        </script>
+</body>
+
+</html>
